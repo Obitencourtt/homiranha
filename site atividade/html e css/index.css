@@ -1,0 +1,160 @@
+body {
+    min-height: 100vh;
+    background-image: url("../fotos/thumb.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Remove barras de rolagem */
+}
+
+/* Remove barras de rolagem para todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+/* Imagem hero centralizada no topo */
+.hero-image {
+    position: fixed;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+}
+
+.thumb-image {
+    width: 1000px;
+    height: auto;
+    border-radius: 15px;
+    transform-origin: top center;
+    animation: smooth-pendulum 4s linear infinite;
+}
+
+/* Animação de pêndulo suave e constante */
+@keyframes smooth-pendulum {
+    0% { transform: rotate(0deg); }
+    6.25% { transform: rotate(3deg); }
+    12.5% { transform: rotate(6deg); }
+    18.75% { transform: rotate(8deg); }
+    25% { transform: rotate(9deg); }
+    31.25% { transform: rotate(8deg); }
+    37.5% { transform: rotate(6deg); }
+    43.75% { transform: rotate(3deg); }
+    50% { transform: rotate(0deg); }
+    56.25% { transform: rotate(-3deg); }
+    62.5% { transform: rotate(-6deg); }
+    68.75% { transform: rotate(-8deg); }
+    75% { transform: rotate(-9deg); }
+    81.25% { transform: rotate(-8deg); }
+    87.5% { transform: rotate(-6deg); }
+    93.75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Painel lateral esquerdo */
+.sidebar-panel {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    z-index: 2500;
+    border: none;
+    backdrop-filter: none;
+    max-height: 95vh;
+}
+
+.sidebar-panel.left {
+    left: 5px;
+}
+
+.sidebar-panel.right {
+    right: 5px;
+}
+
+/* Grid de coluna única */
+.buttons-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Botões mini - retangulares */
+.panel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 70px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.panel-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.panel-button:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.panel-button:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .thumb-image {
+        width: 700px;
+    }
+
+    .hero-image {
+        top: -40px;
+    }
+
+    .panel-button {
+        width: 140px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumb-image {
+        width: 600px;
+    }
+
+    .hero-image {
+        top: -30px;
+    }
+
+    .panel-button {
+        width: 120px;
+        height: 50px;
+    }
+}
+
+
+
