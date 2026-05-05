@@ -1,168 +1,175 @@
-/* Reset */
+/* estilo simples para poderes.html */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html,
 body {
-    font-family: Arial, sans-serif;
-    background: url('../fotos/Fundo-quadrinhos.png') repeat;
-    background-color: black;
-    color: white;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
-/* Header */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #050505 url("../fotos/thumb.png") center/cover fixed no-repeat;
+}
+
 header {
-    background: url('../fotos/thumb.png') center center;
-    background-size: cover;
-    background-color: rgba(255, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.65);
     padding: 30px 20px;
     text-align: center;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #ff3d3d;
 }
 
 header .logo img {
-    width: 250px;
+    width: min(250px, 90vw);
     height: auto;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: white;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #ff3d3d;
 }
 
 header .subtitle {
-    font-size: 1.2rem;
-    color: red;
+    font-size: 1rem;
+    color: #f2f2f2;
+    margin-top: 8px;
 }
 
-/* Navegação */
 nav {
-    background: black;
-    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 14px;
     padding: 0 20px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background 0.25s ease;
 }
 
 nav a:hover {
-    background: rgba(255, 0, 0, 0.7);
-    color: black;
+    background: rgba(255, 61, 61, 0.7);
+    color: #050505;
 }
 
-/* Main Content */
 main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 36px 20px;
 }
 
-/* Introdução */
-.intro {
+.introducao {
     text-align: center;
-    padding: 30px;
-    margin-bottom: 40px;
-    background: url('../fotos/thumb.png') center center;
-    background-size: cover;
-    background-color: rgba(255, 0, 0, 0.5);
+    padding: 28px;
+    margin-bottom: 32px;
+    background: rgba(0, 0, 0, 0.55);
     border-radius: 15px;
-    border: 1px solid red;
+    border: 1px solid rgba(255, 61, 61, 0.6);
 }
 
-.intro p {
-    font-size: 1.3rem;
-    color: white;
+.introducao p {
+    font-size: 1.1rem;
+    color: #ebebeb;
     font-style: italic;
 }
 
-/* Cards de Poder */
-.power-card {
-    background: url('../fotos/thumb.png') center center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-left: 5px solid red;
+.cartao-poder {
+    background: rgba(0, 0, 0, 0.65);
+    border-left: 4px solid #ff3d3d;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease forwards;
 }
 
-.power-card h2 {
-    color: red;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+.cartao-poder:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cartao-poder h2 {
+    color: #ff3d3d;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
     padding-bottom: 10px;
-    border-bottom: 2px solid red;
+    border-bottom: 1px solid rgba(255, 61, 61, 0.5);
 }
 
-.power-card .power-image {
+.cartao-poder .imagem-poder {
     width: 100%;
     max-height: 300px;
     overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 3px solid red;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    border: 2px solid rgba(255, 61, 61, 0.5);
 }
 
-.power-card .power-image img {
+.cartao-poder .imagem-poder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.power-card .power-image img:hover {
-    transform: scale(1.05);
+.cartao-poder .imagem-poder img:hover {
+    transform: scale(1.03);
 }
 
-.power-card p {
-    margin-bottom: 15px;
+.cartao-poder p {
+    margin-bottom: 16px;
+    color: #ddd;
     text-align: justify;
 }
 
-.power-card strong {
-    color: red;
-    font-weight: bold;
+.cartao-poder strong {
+    color: #ff3d3d;
 }
 
-.power-card em {
-    color: lightblue;
+.cartao-poder em {
+    color: #8ac7ff;
 }
 
-/* Footer */
 footer {
-    background: url('../fotos/thumb.png') center center;
-    background-size: cover;
-    background-color: rgba(255, 0, 0, 0.5);
-    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 24px 20px;
     text-align: center;
-    margin-top: 50px;
-    border-top: 4px solid red;
+    margin-top: 32px;
+    border-top: 4px solid #ff3d3d;
 }
 
 footer p {
-    color: white;
-    font-size: 0.9rem;
-}
+    color: #f3f3f3;
+    font-size: 0.95rem;
 }
 
-/* Responsividade */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.8rem;
@@ -177,20 +184,16 @@ footer p {
     }
 
     nav a {
-        padding: 8px 15px;
+        padding: 8px 14px;
         font-size: 0.9rem;
     }
 
-    .power-card {
+    .cartao-poder {
         padding: 20px;
     }
 
-    .power-card h2 {
+    .cartao-poder h2 {
         font-size: 1.4rem;
-    }
-
-    .power-card:hover {
-        transform: none;
     }
 }
 
@@ -203,35 +206,12 @@ footer p {
         padding: 20px 15px;
     }
 
-    .intro p {
-        font-size: 1.1rem;
+    .introducao p {
+        font-size: 1rem;
+    }
+
+    .cartao-poder .imagem-poder {
+        max-height: 220px;
     }
 }
-
-/* Animações */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.power-card {
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-.power-card:nth-child(1) { animation-delay: 0.1s; }
-.power-card:nth-child(2) { animation-delay: 0.2s; }
-.power-card:nth-child(3) { animation-delay: 0.3s; }
-.power-card:nth-child(4) { animation-delay: 0.4s; }
-.power-card:nth-child(5) { animation-delay: 0.5s; }
-.power-card:nth-child(6) { animation-delay: 0.6s; }
-.power-card:nth-child(7) { animation-delay: 0.7s; }
-.power-card:nth-child(8) { animation-delay: 0.8s; }
-.power-card:nth-child(9) { animation-delay: 0.9s; }
-.power-card:nth-child(10) { animation-delay: 1s; }
 
