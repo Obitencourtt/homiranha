@@ -1,4 +1,4 @@
-﻿/* CSS básico e moderno para jogos.html */
+﻿/* CSS simples para jogos.html */
 html,
 body {
     min-height: 100%;
@@ -11,7 +11,7 @@ body {
     background: #050505 url("../fotos/thumb.png") center/cover fixed no-repeat;
 }
 
-.pagina-conteudo {
+.conteudo-principal {
     max-width: 1000px;
     margin: 0 auto;
     padding: 24px;
@@ -131,7 +131,7 @@ p.introducao {
 }
 
 @media (max-width: 700px) {
-    .pagina-conteudo {
+    .conteudo-principal {
         padding: 18px;
     }
 

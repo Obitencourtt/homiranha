@@ -1,0 +1,244 @@
+/* estilo simples para hqs.html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(5,5,5,0.98), rgba(30,0,0,0.96)), url("../fotos/thumb.png") center/cover fixed no-repeat;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../fotos/Fundo-quadrinhos.png") center/center no-repeat;
+    background-size: cover;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px 18px;
+    background: rgba(0, 0, 0, 0.65);
+    border-bottom: 4px solid #ff3d3d;
+}
+
+header .logo img {
+    width: min(240px, 90vw);
+    height: auto;
+}
+
+header h1 {
+    margin: 16px 0 10px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #ff3d3d;
+}
+
+header .subtitulo {
+    color: #eee;
+    font-size: 1rem;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.25s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background: rgba(255, 61, 61, 0.9);
+    color: #050505;
+    border-color: rgba(255, 61, 61, 0.9);
+}
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 32px 20px 48px;
+}
+
+.referencia {
+    margin-bottom: 28px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 61, 61, 0.28);
+    border-radius: 16px;
+    padding: 16px 20px;
+}
+
+.referencia p {
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 0.98rem;
+}
+
+.referencia a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.referencia a:hover {
+    text-decoration: underline;
+}
+
+.introducao {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 61, 61, 0.45);
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.introducao p {
+    color: #eee;
+    line-height: 1.7;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.top3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.cartao-top3 {
+    background: rgba(0, 0, 0, 0.66);
+    border: 1px solid rgba(255, 61, 61, 0.45);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-top3 img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.cartao-top3 .texto {
+    padding: 24px;
+}
+
+.cartao-top3 h2 {
+    margin-bottom: 14px;
+    font-size: 1.35rem;
+    color: #ff4d4d;
+}
+
+.cartao-top3 p {
+    color: #ddd;
+    line-height: 1.65;
+}
+
+.numero {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 61, 61, 0.95);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #050505;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.cartao-top3 .cartao-imagem {
+    position: relative;
+}
+
+.mencoes {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 61, 61, 0.45);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.mencoes h2 {
+    margin-bottom: 18px;
+    color: #ff4d4d;
+    font-size: 1.7rem;
+}
+
+.grid-mencoes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.mencao {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    padding: 16px 18px;
+    color: #f1f1f1;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    color: #ccc;
+    border-top: 1px solid rgba(255, 61, 61, 0.22);
+}
+
+@media (max-width: 980px) {
+    .top3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-mencoes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 620px) {
+    nav ul {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+
+    .cartao-top3 img {
+        height: 260px;
+    }
+}
