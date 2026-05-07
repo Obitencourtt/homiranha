@@ -3,84 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 3 HQs do Homem-Aranha</title>
-    <link rel="stylesheet" href="hqs.css">
+    <title>HQs</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:Arial,sans-serif;color:#fff;min-height:100vh;background:#050505 url("../fotos/Fundo-quadrinhos.png") center/cover fixed no-repeat;overflow-x:hidden;}
+        .container{max-width:1080px;margin:0 auto;padding:20px;}
+        header{padding:30px 0 18px;border-bottom:4px solid #ff3333;margin-bottom:30px;text-align:center;}
+        header h1{font-size:32px;color:#ff3333;margin:0 0 15px;}
+        .voltar{display:inline-block;padding:10px 20px;background:#ff3333;color:#fff;text-decoration:none;border-radius:8px;}
+        .voltar:hover{background:#cc0000;}
+        .conteudo{background-color:rgba(0,0,0,.55);padding:24px;border:1px solid rgba(255,255,255,.08);}
+        .conteudo h2{color:#ff3333;font-size:28px;margin-bottom:20px;}
+        .item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.08);}
+        .item:last-child{border-bottom:none;}
+        .item h3{color:#ff3333;font-size:20px;margin-bottom:10px;}
+        .item p{color:#ddd;line-height:1.6;}
+        footer{text-align:center;padding:20px;color:#999;border-top:1px solid rgba(255,255,255,.1);}
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../fotos/Spider-Man-Logo.png" alt="Logo Homem-Aranha">
-        </div>
-        <h1>Top 3 HQs do Homem-Aranha</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Histórias em Quadrinhos do Homem-Aranha</h1>
+            <a href="index.html" class="voltar">← Voltar</a>
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="peter.html">Peter Parker</a></li>
-            <li><a href="trajes.html">Trajes</a></li>
-            <li><a href="poderes.html">Poderes</a></li>
-            <li><a href="vilões.html">Vilões</a></li>
-            <li><a href="hqs.html" class="active">HQs</a></li>
-        </ul>
-    </nav>
+        <main>
+            <div class="conteudo">
+                <h2>Principais HQs</h2>
+                <img src="../fotos/a morte de gwen stacy.webp" alt="HQs" style="width:100%;max-height:260px;object-fit:cover;border-radius:10px;border:2px solid rgba(255,51,51,.55);margin-bottom:18px;display:block;">
+                
+                <div class="item">
+                    <h3>A Morte de Gwen Stacy</h3>
+                    <p>Uma das histórias mais famosas e tristes. Gwen Stacy morre de forma trágica, marcando profundamente Peter Parker.</p>
+                </div>
 
-    <main>
-        <section class="referencia">
-            <p>Fonte: <a href="https://canaltech.com.br/quadrinhos/as-melhores-historias-do-homem-aranha-176646/" target="_blank">Canaltech — As 10 melhores histórias do Homem-Aranha</a></p>
-        </section>
+                <div class="item">
+                    <h3>Última Caçada de Kraven</h3>
+                    <p>Kraven o Caçador cria um plano elaborado para capturar o Homem-Aranha. Uma história intensa de perseguição e suspense.</p>
+                </div>
 
-        <section class="top3">
-            <article class="cartao-top3">
-                <div class="cartao-imagem">
-                    <img src="../fotos/a1.jpeg" alt="A noite em que Gwen Stacy morreu">
-                    <div class="numero">3</div>
+                <div class="item">
+                    <h3>Noite de Aprendizado</h3>
+                    <p>Peter aprende lições importantes sobre responsabilidade e heróismo. Uma história que define sua filosofia como herói.</p>
                 </div>
-                <div class="texto">
-                    <h2>A noite em que Gwen Stacy morreu</h2>
-                    <p>Um dos contos mais dolorosos da trajetória do Homem-Aranha, publicado em Amazing Spider-Man #121-122 (1973). A morte de Gwen Stacy levou Peter ao limite e mostrou sua bússola moral incorruptível diante da tragédia.</p>
-                </div>
-            </article>
 
-            <article class="cartao-top3">
-                <div class="cartao-imagem">
-                    <img src="../fotos/a2.jpeg" alt="Última Caçada de Kraven">
-                    <div class="numero">2</div>
+                <div class="item">
+                    <h3>Origem do Simbionte</h3>
+                    <p>O aparecimento do traje preto que mais tarde se torna Venom. Uma história que marca o início de grandes conflitos.</p>
                 </div>
-                <div class="texto">
-                    <h2>Última Caçada de Kraven</h2>
-                    <p>Em 1987, esta trama sombria coloca o Homem-Aranha no limite, enterrando-o e oferecendo uma suspense tenso que prova como o Aranha pode sobreviver até à própria morte.</p>
-                </div>
-            </article>
 
-            <article class="cartao-top3">
-                <div class="cartao-imagem">
-                    <img src="../fotos/a3.jpeg" alt="A Saga do Planejador Mestre">
-                    <div class="numero">1</div>
+                <div class="item">
+                    <h3>Duende Verde Revelado</h3>
+                    <p>A verdadeira identidade do Duende Verde é revelada. Norman Osborn é mais perigoso do que parecia.</p>
                 </div>
-                <div class="texto">
-                    <h2>A Saga do Planejador Mestre</h2>
-                    <p>Steve Ditko e Stan Lee revitalizam Peter Parker em Amazing Spider-Man #31-33 (1965), com uma aventura que estabelece o mito e mostra o herói enfrentando desafios fora da escola.</p>
-                </div>
-            </article>
-        </section>
 
-        <section class="mencoes">
-            <h2>Menções Honrosas</h2>
-            <div class="grid-mencoes">
-                <div class="mencao">Homem-Aranha: Azul</div>
-                <div class="mencao">A saga do Duende Macabro original</div>
-                <div class="mencao">Homem-Aranha nunca mais</div>
-                <div class="mencao">A Manopla</div>
-                <div class="mencao">A Conversa</div>
-                <div class="mencao">A Morte do Capitão Stacy</div>
-                <div class="mencao">O Presente</div>
+                <div class="item">
+                    <h3>Volta para Casa</h3>
+                    <p>Peter retorna a seus fundamentos. Uma história que o faz refletir sobre seu papel como super-herói em Nova York.</p>
+                </div>
             </div>
-        </section>
-    </main>
+        </main>
 
-    <footer>
-        <p>© 2026 Fan Page do Homem-Aranha</p>
-    </footer>
+        <footer>
+            <p>&copy; 2024 Homem-Aranha - Todos os direitos reservados</p>
+        </footer>
+    </div>
 </body>
 </html>

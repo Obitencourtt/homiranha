@@ -3,127 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter Parker - Poderes do Homem-Aranha</title>
-    <link rel="stylesheet" href="poderes.css">
+    <title>Poderes</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:Arial,sans-serif;color:#fff;min-height:100vh;background:#050505 url("../fotos/thumb.png") center/cover fixed no-repeat;}
+        .container{max-width:1000px;margin:0 auto;padding:20px;}
+        header{padding:30px 0;border-bottom:4px solid #ff3333;margin-bottom:30px;text-align:center;}
+        header h1{font-size:36px;color:#ff3333;margin-bottom:15px;}
+        .voltar{display:inline-block;padding:10px 20px;background:#ff3333;color:#fff;text-decoration:none;border-radius:8px;margin-top:10px;}
+        .voltar:hover{background:#cc0000;}
+        main{margin-bottom:40px;}
+        .conteudo{background-color:rgba(0,0,0,.55);padding:24px;border:1px solid rgba(255,255,255,.08);}
+        .conteudo h2{color:#ff3333;font-size:28px;margin-bottom:20px;}
+        .item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.08);}
+        .item:last-child{border-bottom:none;}
+        .item h3{color:#ff3333;font-size:20px;margin-bottom:10px;}
+        .item p{color:#ddd;line-height:1.6;}
+        footer{text-align:center;padding:20px;color:#999;border-top:1px solid rgba(255,255,255,.1);}
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../fotos/Spider-Man-Logo.png" alt="Logo Homem-Aranha">
-        </div>
-        <h1>HOMEM-ARANHA: TODOS OS PODERES DE PETER PARKER</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Poderes do Homem-Aranha</h1>
+            <a href="index.html" class="voltar">← Voltar</a>
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="peter.html">Peter Parker</a></li>
-            <li><a href="trajes.html">Trajes</a></li>
-            <li><a href="poderes.html">Poderes</a></li>
-            <li><a href="vilões.html">Vilões</a></li>
-        </ul>
-    </nav>
+        <main>
+            <div class="conteudo">
+                <h2>Principais Poderes</h2>
+                <img src="../fotos/spider-man-remastered-new-peter-parker-ps5-details-f_s3xn.jpg" alt="Poderes" style="width:100%;max-height:260px;object-fit:cover;border-radius:10px;border:2px solid rgba(255,51,51,.55);margin-bottom:18px;display:block;">
+                
+                <div class="item">
+                    <h3>Força Sobre-humana</h3>
+                    <p>O Homem-Aranha possui força muito maior que a de um humano comum, permitindo-o levantar até 10 toneladas.</p>
+                </div>
 
-    <main>
-        <section class="introducao">
-            <p>Você conhecia todos eles? Descubra tudo que Peter Parker é capaz de fazer como Homem-Aranha!</p>
-        </section>
+                <div class="item">
+                    <h3>Agilidade Extrema</h3>
+                    <p>Sua flexibilidade e reflexos são muito superiores aos de qualquer humano, permitindo movimentos rápidos e ágeis.</p>
+                </div>
 
-        <section id="fisiologia" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/2.webp" alt="Fisiologia Aranha">
+                <div class="item">
+                    <h3>Teia de Aranha</h3>
+                    <p>Pode disparar teias pegajosas de seus pulsos, que são praticamente indestrutíveis. Usa para se locomover e imobilizar inimigos.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Sentido de Aranha</h3>
+                    <p>Um sexto sentido que o alerta sobre perigos iminentes, permitindo-o desviar de ataques antes mesmo de vê-los.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Adesão em Superfícies</h3>
+                    <p>Consegue aderir a qualquer superfície, permitindo escalar prédios e caminhar em paredes e tetos.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Resistência</h3>
+                    <p>Possui resistência muito maior que um humano comum, podendo lutar por longas horas sem se cansar facilmente.</p>
+                </div>
             </div>
-            <h2>Fisiologia Aranha</h2>
-            <p>Mesmo que algumas versões de Peter tenham presas ou até mesmo patas de aranha, no universo 616, o herói tem dois braços, duas pernas e habilidades proporcionais a de uma aranha. Isso vai incluir, por exemplo, a habilidade de escalar paredes.</p>
-            <p>E tudo isso, inicialmente, teve uma explicação científica, já que os poderes foram concedidos a ele após ser picado por uma Aranha Comum de Casa (<a href="https://pt.wikipedia.org/wiki/Achaearanea_tepidariorum" style="color: rgb(255, 170, 42);" target="_blank">Achaearanea tepidariorum</a>), que havia sofrido mutação por ter sido exposta a certas frequências de radiação. Parker, então, teve o "padrão de cromossomo melhorado", lhe dando força, velocidade, resistência e inúmeras habilidades aracnídeas.</p>
-        </section>
+        </main>
 
-        <section id="marca-kaine" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/3.webp" alt="Marca de Kaine">
-            </div>
-            <h2>Marca de Kaine</h2>
-            <p>Peter consegue controlar mentalmente o fluxo de atração inter-atômico entre as camadas moleculares. Em outras palavras, ele consegue se grudar em qualquer superfície. Essa habilidade o permite escalar paredes, mas já ganhou outras funções.</p>
-            <p>O clone de Parker, por exemplo, a utilizava de forma ofensiva, para queimar o rosto de suas vítimas. Mais tarde, o próprio Homem-Aranha usou o poder para escapar do Duende Verde, fazendo as pontas dos dedos se agarrarem ao rosto do vilão e o puxando com força, cavando cinco feridas profundas no rosto de Norman.</p>
-        </section>
-
-        <section id="superhumanas" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/4.webp" alt="Habilidades Sobre-Humanas">
-            </div>
-            <h2>Habilidades Sobre-Humanas</h2>
-            <p>Já é de praxe que alguns heróis possuam o quesito "sobre-humano" para resumir uma quantidade de habilidades que o tornam especiais. E isso não é diferente para o amigo da vizinhança.</p>
-            <p>Peter possui <strong>força, velocidade e resistência sobre-humanas</strong>. Isso o permite levantar até quinze toneladas, mas também exercer uma enorme força sobre as pernas, o fazendo ser capaz de saltar a uma altura de vários andares em um único salto.</p>
-            <p>Em relação a sua velocidade, Parker consegue se mover mais rápido que o olho pode acompanhar, sendo capaz de alcançar um carro acelerando enquanto está à pé.</p>
-        </section>
-
-        <section id="fator-cura" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/5.webp" alt="Fator de Cura">
-            </div>
-            <h2>Fator de Cura</h2>
-            <p>Para compensar esses esforços, o Homem-Aranha possui um metabolismo acelerado e isso também o permite se healer rapidamente. Embora não esteja no nível do Wolverine, é suficiente para se recuperar de ferimentos graves em um tempo curto.</p>
-            <p>O personagem já se curou de uma cegueira após dois dias e de queimaduras graves de 3º grau. Isso já mostra que o fator regenerativo do herói ajuda não apenas no tempo de cura, mas também no impedimento de Peter ter cicatrizes de seus ferimentos.</p>
-        </section>
-
-        <section id="imunidade" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/6.webp" alt="Imunidade a Contaminações">
-            </div>
-            <h2>Imunidade a Contaminações</h2>
-            <p>Outra característica ligada ao seu metabolismo é a tolerância a drogas e doenças. Toxinas aplicadas no personagem podem gerar pouca ou nenhuma reação nele.</p>
-            <p>A fisiologia única do Homem-Aranha lhe permitiu, por exemplo, se recuperar dos efeitos do vampirismo, como afirmado por Blade. Seu sangue radioativo matou as enzimas responsáveis pela transformação em vampiro.</p>
-            <p>Fora isso, também podemos afirmar que é difícil de fazer o Cabeça de Teia ficar bêbado. Sem contar que a ressaca não deve ser um problema para o herói.</p>
-        </section>
-
-        <section id="reflexos" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/7.webp" alt="Reflexos e Equilíbrio">
-            </div>
-            <h2>Reflexos e Equilíbrio</h2>
-            <p>O Homem-Aranha possui a habilidade de atingir um equilíbrio perfeito em qualquer posição. Para isso, a habilidade de escalar paredes é útil, mas não é a principal aqui.</p>
-            <p>Outro ponto que o permite se mover com equilíbrio e precisão são seus reflexos. <strong>Quarenta vezes maior do que os de um ser humano comum</strong>, isso já permitiu a Peter se esquivar de uma rajada de balas usando apenas seus reflexos, sem uso do sentido aranha.</p>
-        </section>
-
-        <section id="sentido-aranha" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/8.webp" alt="Sentido Aranha">
-            </div>
-            <h2>Sentido Aranha</h2>
-            <p>O herói possui um sentido extra-sensorial que o alerta para potenciais perigos imediatos. Ele provoca uma sensação de formigamento na parte traseira de seu crânio, permitindo-lhe escapar da maioria dos ataques que sofre.</p>
-            <p>Para alguns, a origem dessa habilidade é a sua conexão com a Teia da Vida e do Destino, quase como uma clarividência, a qual lhe avisa de qualquer perigo iminente.</p>
-            <p>Seu sentido aranha é tão conectado aos seus reflexos que, mesmo dormindo ou atordoado, o personagem é capaz de desviar automaticamente. A habilidade é um sentido próprio e independente de qualquer outro.</p>
-        </section>
-
-        <section id="radio" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/9.webp" alt="Detecção de Frequência de Rádio">
-            </div>
-            <h2>Detecção de Frequência de Rádio</h2>
-            <p>O sentido aranha de Peter também lhe dá a habilidade de localizar certas frequências de rádio. Munido dos rastreadores apelidados de Localizadores-Aranha, o Homem-Aranha utiliza essa habilidade para conseguir rastrear ou espionar um alvo.</p>
-        </section>
-
-        <section id="teia-organica" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/10.webp" alt="Geração de Teia Orgânica">
-            </div>
-            <h2>Geração de Teia Orgânica</h2>
-            <p>Algumas versões do personagem deixam essa habilidade de lado, sendo obrigados a fazer sua teia de forma sintética. Mas, Peter já foi capaz de produzir sua própria teia a partir de glândulas presentes em seus antebraços.</p>
-            <p>Essas teias possuíam muitas das propriedades das teias artificiais e eram lançadas pelo pulso, onde continha um orifício central usado para expelir e puxar a teia.</p>
-        </section>
-
-        <section id="psiquico" class="cartao-poder">
-            <div class="imagem-poder">
-                <img src="../fotos/11.webp" alt="Alinhamento Psíquico com Artrópodes">
-            </div>
-            <h2>Alinhamento Psíquico com Artrópodes</h2>
-            <p>Outra mudança genética que não se manteve por muito tempo com Peter foi a capacidade de se alinhar psiquicamente com o ambiente à sua volta, especialmente em relação a aranhas e insetos.</p>
-            <p>Peter, então, era capaz de se conectar empaticamente com diferentes populações de aranhas, mas era incapaz de se comunicar diretamente com elas ou comandá-las.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Fan Page do Homem-Aranha | Criado por fans para fans</p>
-    </footer>
+        <footer>
+            <p>&copy; 2024 Homem-Aranha - Todos os direitos reservados</p>
+        </footer>
+    </div>
 </body>
 </html>
